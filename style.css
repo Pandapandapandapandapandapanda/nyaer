@@ -26,8 +26,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
 }
 
 .login-form-textfield{
@@ -56,5 +54,5 @@ body {
   width: auto;
   height: auto;
   transform: scale(2);
-  bottom: 60vh;
+  bottom: 20vh;
 }
