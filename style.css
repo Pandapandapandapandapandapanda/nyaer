@@ -26,6 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width:100vw;
   height:100vh;
 }
@@ -54,7 +55,9 @@ body {
 #logo-login-image{
   position: relative;
   transform: scale(2);
-  max-width: 100%;
+  width: 20vw;
   height: auto;
-  bottom: 20vh;
+  max-height: 100%;
+  max-width: 24vh;
+  margin-bottom: 7px;
 }
