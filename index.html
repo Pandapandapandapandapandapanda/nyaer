@@ -9,21 +9,22 @@
 </head>
 
 <body>
+  <script src="script.js"></script>
  <div id="login-page" class="main-page centered">
     <div id="logo-login">
    <img src="img/meowy.webp" id="logo-login-image">
     </div>
    <div id="login-box">
-      <form>
-        <input type="text" placeholder="Username" id="username-form-login-page" class="textfield login-form-textfield"><br>
-        <input type="password" placeholder="Password" id="password-form-login-page" class="textfield login-form-textfield"><br>
+      <form id="login-form">
+        <input type="text" placeholder="Username" id="username-form-login-page" class="textfield login-form-textfield" name="username"><br>
+        <input type="password" placeholder="Password" id="password-form-login-page" class="textfield login-form-textfield" name="password"><br>
         <div class="login-form-line">
         <hr class="login-line-margin">
         <span class="dot"></span>
         <hr class="login-line-margin">
         </div>
-         <button id="login-button" class="textfield login-form-buttons">Login</button>
-         <button id="signup-button" class="textfield login-form-buttons">Sign Up</button>
+         <button id="login-button" class="textfield login-form-buttons" type="button">Login</button>
+         <button id="signup-button" class="textfield login-form-buttons" type="button">Sign Up</button>
      </form>
      </div>
  </div>
