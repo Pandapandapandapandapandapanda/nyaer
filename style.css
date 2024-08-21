@@ -39,12 +39,38 @@ body {
   top: 10vh;
 }
 
+.login-line-margin{
+  position: relative;
+  margin-top: 7px;
+  width: 40%;
+  border-style: solid;
+}
+
+.login-form-line{
+  display: flex;
+  position: relative;
+  height: 1vh;
+  top: 10vh;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form-line .dot{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Dot color */
+  border-radius: 50%; /* Make it a circle */
+  width: 5px; /* Size of the dot */
+  height: 5px; /* Size of the dot */
+  z-index: 1;
+  top: 75%;
+}
+
 .login-form-buttons{
   position: relative;
   width:20vw;
   height:7vh;
-  margin-top: 7px;
-  top: 10vh;
+  margin-top: 5px;
+  top: 11.5vh;
 }
 
 .main-page{
