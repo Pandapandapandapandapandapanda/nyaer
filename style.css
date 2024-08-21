@@ -26,6 +26,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width:100vw;
+  height:100vh;
 }
 
 .login-form-textfield{
@@ -50,9 +52,9 @@ body {
 }
 
 #logo-login-image{
-  position: absolute;
-  width: auto;
-  height: auto;
+  position: relative;
   transform: scale(2);
-  bottom: 60vh;
+  max-width: 100%;
+  height: auto;
+  bottom: 20vh;
 }
