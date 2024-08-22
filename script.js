@@ -40,6 +40,9 @@ function login(username, password){
 async function cloudLinkLogin(username, password){
   const tempToken = (await login(username, password))
   if(tempToken.error){
+    const loginPageError = document.getElementById("login-box-error")
+    loginPageError.style.display = "block";
+    loginPageError.innerHTML = "Error logging in: " + tempToken.type;
     console.warn(tempToken.type);
     return false;
   }
