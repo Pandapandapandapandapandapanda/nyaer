@@ -33,16 +33,19 @@ body {
 
 .login-form-textfield{
   position: relative;
-  width: 40vw;
-  height: 5vh;
   margin-top: 7px;
   top: 10vh;
+}
+
+.login-form-textfield-size{
+  width: 40vw;
+  height: 5vh;
 }
 
 .login-line-margin{
   position: relative;
   margin-top: 7px;
-  width: 40%;
+  width: 17vw;
   border-style: solid;
 }
 
@@ -51,6 +54,7 @@ body {
   position: relative;
   height: 1vh;
   top: 10vh;
+  left: 0vh;
   margin-bottom: 0px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -62,12 +66,12 @@ body {
   width: 5px; /* Size of the dot */
   height: 5px; /* Size of the dot */
   z-index: 1;
-  top: 75%;
+  top: 80%;
 }
 
 .login-form-buttons{
   position: relative;
-  width:20vw;
+  width:20.5vw;
   height:7vh;
   margin-top: 5px;
   top: 11.5vh;
@@ -76,6 +80,17 @@ body {
 .main-page{
   width:100vw;
   height:100vh;
+}
+
+.error{
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(209, 0, 0, .5);
+  border-color: rgba(209, 0, 0, .2);
+  border-style: solid;
+  color: rgba(255, 255, 255, 1);
+  white-space: normal;
+  width: 40vw;
 }
 
 #logo-login-image{
