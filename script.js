@@ -70,7 +70,8 @@ async function doLogin(){
   console.log("meow");
   let username = document.getElementById("username-form-login-page").value;
   let password = document.getElementById("password-form-login-page").value;
-  if (!(await cloudLinkLogin(username, password))){
+  if ((await cloudLinkLogin(username, password)) === false){
+    console.log("whar the");
     return    
   }
   document.body.style.backdropFilter = "none";
