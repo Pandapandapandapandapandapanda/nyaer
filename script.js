@@ -40,9 +40,13 @@ function login(username, password){
 async function cloudLinkLogin(username, password){
   const tempToken = (await login(username, password))
   if(tempToken.error){
+    const loginPageError = document.getElementById("login-box-error")
+    loginPageError.style.display = "block";
+    loginPageError.innerHTML = "Error logging in: " + tempToken.type;
     console.warn(tempToken.type);
     return false;
   }
+  console.log("ha");
   token = tempToken.token;
   const authPacket = {
     cmd: "direct",
@@ -66,14 +70,8 @@ async function doLogin(){
   console.log("meow");
   let username = document.getElementById("username-form-login-page").value;
   let password = document.getElementById("password-form-login-page").value;
-  const log = cloudLinkLogin(username, password);
-  if (log){
-    await log;
-  } else {
-    const loginPageError = document.getElementById("login-box-error")
-    loginPageError.style.display = "block";
-    loginPageError.innerHTML = "Error logging in: " + tempToken.type;
-    return
+  if (!(await cloudLinkLogin(username, password))){
+    return    
   }
   document.body.style.backdropFilter = "none";
   document.getElementById("login-page").style.display = "none";
