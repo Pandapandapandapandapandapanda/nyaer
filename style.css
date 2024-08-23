@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  backdrop-filter: blur(10px);
 }
 
 .textfield{
