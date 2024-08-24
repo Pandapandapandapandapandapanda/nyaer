@@ -35,7 +35,7 @@ body {
 .login-form-textfield{
   position: relative;
   margin-top: 7px;
-  top: 10vh;
+  top: 4vh;
 }
 
 .login-form-textfield-size{
@@ -54,7 +54,7 @@ body {
   display: flex;
   position: relative;
   height: 1vh;
-  top: 10vh;
+  top: 4vh;
   left: 0vh;
   margin-bottom: 0px;
   color: rgba(0, 0, 0, 0.5);
@@ -75,7 +75,7 @@ body {
   width:20.5vw;
   height:7vh;
   margin-top: 5px;
-  top: 11.5vh;
+  top: 5.5vh;
 }
 
 .main-page{
@@ -94,6 +94,20 @@ body {
   width: 40vw;
 }
 
+.login-page-links{
+  display: flex;
+  position: relative;
+  height: 1vh;
+  top: 9vh;
+  left: 0vh;
+}
+
+.login-page-links > * > img{
+  height: 7vh;
+  width: auto;
+  margin: 2vw;
+}
+
 #logo-login-image{
   position: relative;
   transform: scale(2);
@@ -101,5 +115,6 @@ body {
   height: auto;
   max-height: 100%;
   max-width: 24vh;
-  margin-bottom: 7px;
+  margin-bottom: 0vh;
+  bottom: 6vh;
 }
